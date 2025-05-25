@@ -1,0 +1,14 @@
+version: "3"
+services:
+  event-analytics-serve:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: event-analytics-serve # 依赖于当前 Dockerfile 创建镜像
+    container_name: event-analytics-serve
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 8090:3002 # 宿主机通过 8080 访问
+    volumes:
+      - /home/work/immoc-lego/nginx_logs:/app/nginx_logs/event_analytics # 见 nginx_conf/prd-dev/event.conf 和 Dockerfile

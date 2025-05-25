@@ -6,13 +6,14 @@
 module.exports = {
   // mongodb 连接配置
   mongodbConf: {
-    host: "127.0.0.1",
-    port: "27017",
+    host: "host.docker.internal",
+    port: "27016",
     dbName: "mw-cli-dev",
   },
 
   // access_log 日志文件目录，要和 nginx_conf/dev/event.conf 保持一致！
-  accessLogPath: "home/work/immoc-lego/nginx_logs",
+  //   accessLogPath: "home/work/immoc-lego/nginx_logs",
+  accessLogPath: "/app/nginx_logs/event_analytics",
 
   // cors origin
   corsOrigin: "*",
