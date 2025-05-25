@@ -42,7 +42,7 @@ jobs:
             # 然后 git clone https://username:password@github.com/imooc-lego/event-analytics-server.git -b dev （私有项目，需要 github 用户名和密码）
             # 记得删除 origin ，否则会暴露 github 密码
 
-            cd /home/work/imooc-lego/event-analytics-serve;
+            cd /home/work/immoc-lego/event-analytics-serve;
             git remote add origin https://github.com/bangbang6/event-analytics-serve.git;
             git checkout dev;
             git pull origin dev; # 重新下载最新代码
