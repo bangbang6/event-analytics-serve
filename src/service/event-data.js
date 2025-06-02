@@ -10,6 +10,7 @@ const EventModel = require("../model/EventModel");
  * @param {Array} eventDataList 事件数据列表
  */
 async function createEventsService(eventDataList = []) {
+  console.log("eventDataList====", eventDataList);
   const results = await EventModel.create(eventDataList);
   return results.length;
 }

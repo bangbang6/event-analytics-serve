@@ -16,7 +16,7 @@ const cors = require("./middlewares/cors");
 // 启动定义日志分析
 splitLogFileTimed(); // 定时拆分日志文件
 analysisLogsTimed(); // 定时分析日志，结果入库
-// rmLogsTimed(); // 定时删除过期日志文件
+rmLogsTimed(); // 定时删除过期日志文件
 
 // 路由
 const index = require("./routes/index");
