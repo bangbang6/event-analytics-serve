@@ -13,7 +13,7 @@ module.exports = {
 
   // access_log 日志文件目录，要和 nginx_conf/dev/event.conf 保持一致！
   //   accessLogPath: "home/work/immoc-lego/nginx_logs",
-  accessLogPath: "/app/nginx_logs/event_analytics",
+  accessLogPath: "home/work/immoc-lego/nginx_logs",
 
   // cors origin
   corsOrigin: "*",
